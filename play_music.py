@@ -1,52 +1,12 @@
 # this need premium acount for play
 # 
-# import spotipy
-# from spotipy.oauth2 import SpotifyOAuth
-
-# # Set up your credentials
-# client_id = 'b4366c50d6004c7e8151d33296349b91'
-# client_secret = '1510ba2b7c424923910e132de5b1f0f8'
-# redirect_uri = 'http://localhost:8888/callback'
-
-# scope = 'user-library-read user-modify-playback-state user-read-playback-state'
-
-# sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
-#                                                 client_secret=client_secret,
-#                                                 redirect_uri=redirect_uri,
-#                                                 scope=scope))
-
-#     # Search for a track
-# track_name = 'Shape of You'  # Replace with your desired track name
-# results = sp.search(q=track_name, limit=1, type='track')
-# # results = sp.current_user_saved_tracks()
-# track_id = results['tracks']['items'][0]['id']
-
-# # for idx, item in enumerate(results['items']):
-# #     track = item['track']
-# #     print(f"{idx + 1}. {track['artists'][0]['name']} – {track['name']}")
-    
-    
-# #     # Get the available devices
-# devices = sp.devices()
-# print(devices)
-
+#
 
 # if devices['devices']:
 #     for device in devices['devices']:
 #         print(f"Device Name: {device['name']}, Device Type: {device['type']}, Device ID: {device['id']}")
 #     device_id = devices['devices'][0]['id']  # Choose the first available device
 
-#         # Play the track on the selected device
-#     sp.start_playback(device_id=device_id, uris=[f'spotify:track:{track_id}'])
-#     print(f'Playing {track_name} on {devices["devices"][0]["name"]}')
-# else:
-#         print('No available devices found.')
-
-
-# deezer api not awaible in india
-# import requests
-
-# url = "https://deezerdevs-deezer.p.rapidapi.com/infos"
 
 # headers = {
 # 	"x-rapidapi-key": "0fedadc180msh92c390c5f0693dfp1307dajsnbf283b6ad5d6",
@@ -63,14 +23,6 @@
 # import vlc
 # import time
 
-# # Deezer API credentials
-# rapidapi_key = "0fedadc180msh92c390c5f0693dfp1307dajsnbf283b6ad5d6"
-
-# # Define the headers for the API request
-# headers = {
-#     "x-rapidapi-key": rapidapi_key,
-#     "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
-# }
 
 # # Function to search for a track
 # def search_track(track_name):
@@ -107,11 +59,7 @@
 
 # import requests
 
-# # Your API key
-# api_key = "Q7xqw_kCmgH9wub06HUqs"
-
-# # Define the API endpoint
-# graphql_url = f"https://osdb-api.confidence.sh/graphql/{api_key}/"
+#
 
 # # Define the GraphQL query
 # query = """
@@ -121,8 +69,7 @@
 #     name
 #     duration
 #   }
-#   song(id: "5eab924441b68077f13207ad") {
-#     id
+#   song(id
 #     name
 #     duration
     
@@ -164,11 +111,9 @@
 # #mixclud
 # import requests
 
-# # Replace with your Mixcloud username
-# username = "Dineshkumarkarn"
 
-# # URL for the Mixcloud API endpoint
-# url = f"https://api.mixcloud.com/{username}/uploads/"
+
+
 
 # # Send a GET request to the API endpoint
 # response = requests.get(url)
